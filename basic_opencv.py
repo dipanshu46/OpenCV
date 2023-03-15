@@ -2,7 +2,7 @@ import cv2 as cv
 # print(cv.__version__)       # to check the version of opencv
 
 # to read an image
-img = cv.imread('Lena.png', -1)
+img = cv.imread('leuvenA.jpg', 1)
 print(img)          # it will print the matrix of pixels read by opencv
 
 # to display an image
@@ -15,4 +15,4 @@ cv.waitKey(0)                   # wait forever
 cv.destroyAllWindows()
 
 # to write to a file using opencv
-cv.imwrite('lena_copy.jpg', img)
+cv.imwrite('my_image.jpg', img)

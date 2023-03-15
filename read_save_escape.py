@@ -1,6 +1,6 @@
 import cv2 as cv
 
-img = cv.imread('Lena.png', 1)
+img = cv.imread('leuvenA.jpg', 1)
 
 print("Press Esc to exit\nPress s to save as\n")
 cv.imshow('image',img)
