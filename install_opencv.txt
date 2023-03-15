@@ -1,0 +1,37 @@
+Python being a pre-requisite for OpenCV tutorials, it is assumed python is already installed in your system.
+If not, please refer to the author's python repository for its download.
+
+To install OpenCV on windows :
+    1) Open your command prompt and type > pip --version
+        This command will display the version of pip that was installed with your python.
+        If it does not show anything, you need to install python again properly.
+    2) Type > pip install opencv-python
+        This command will install opencv and its dependencies including numpy.
+    3) Verify if opencv is intalled properly or not by opening python REPL. Type > python
+        This will open your Python REPL, type >>> import cv2
+        This command should work properly without any error to confirm successful installation of OpenCV
+        You can check the version of opencv by typing >>> cv2.__version__
+
+
+To install OpenCV on Linux :
+    1) Open Terminal (Ctrl + Alt + T), type $ sudo apt install python3-opencv
+        This command will install OpenCV.
+    2) Verify  installation by opening python REPL, type $ python3
+        it will open REPL, type >>> import cv2
+        This command should work properly without any error to confirm successful installation of OpenCV
+        You can check the version of opencv by typing >>> cv2.__version__
+
+    NOTE: The OpenCV version downloaded would be the released version for your python3 version. To download the latest version of OpenCV. Follow the steps.
+    1) Open Terminal (Ctrl + Alt + T), type $ pip --version
+        this command will display the pip version available on your system. 
+        To download the latest version of pip type $ sudo apt install python3-pip
+            Latest version of pip will be installed.
+    2) Type $ pip install opencv-python
+        This will install the latest OpenCV version.
+    3) Verify  installation by opening python REPL, type 
+        $ python3
+        it will open REPL, type 
+        >>> import cv2
+        This command should work properly without any error to confirm successful installation of OpenCV
+        You can check the version of opencv by typing 
+        >>> cv2.__version__
