@@ -2,7 +2,7 @@ import cv2 as cv
 # print(cv.__version__)       # to check the version of opencv
 
 # to read an image
-img = cv.imread('leuvenA.jpg', 1)
+img = cv.imread('data/leuvenA.jpg', 1)
 print(img)          # it will print the matrix of pixels read by opencv
 
 # to display an image
