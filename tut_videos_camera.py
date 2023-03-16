@@ -6,6 +6,10 @@ import cv2 as cv
 cam_feed = cv.VideoCapture(0)           # default camera is at device index 0, multiple external cameras will be indexed from 1
 # cam_feed is now the object for our camera
 
+f_width = cam_feed.get(cv.CAP_PROP_FRAME_WIDTH)
+f_height = cam_feed.get(cv.CAP_PROP_FRAME_HEIGHT)
+print('Width:', f_width,'Height:', f_height)
+
 while True:             # since videos have continuous frames of data we need to iterate continuously to read the next frame
     ret, frame = cam_feed.read()
     # VideoCapture_object.read() method reads from the camera via the object created of it and returns a tuple containing two values.
