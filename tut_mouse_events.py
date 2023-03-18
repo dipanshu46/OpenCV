@@ -16,6 +16,7 @@ import cv2
 # update image function
 def updateScreen(s,x,y,color):
     '''Function updates the screen'''
+    
     global img
     font = cv2.FONT_HERSHEY_SIMPLEX
     img = cv2.putText(img, s, (x,y), font, 0.7, color, 2, cv2.LINE_AA)
@@ -26,6 +27,7 @@ def updateScreen(s,x,y,color):
 # Creating event handler for our mouse.
 def click_event(event, x,y, flags, param):
     '''Function to track events and perform an action based on the event'''
+
     global img
     if event == cv2.EVENT_LBUTTONDOWN:
         # Event tracker for left button click -> performs coordinates display action.
