@@ -17,7 +17,7 @@ img = cv2.rectangle(img, (384,200),(510,128), (0,255,5), -1)
 # To draw a circle use cv2.circle(img, center_coordinate, radius, colour(BGR Format), thickness)
 img = cv2.circle(img, (447,63), 63, (0,60,220), -1)
 
-# To put text on an image use cv2.putText(img, text_string, start_coordinates, font_face, fontsize, colour(BGR Format), thickness, linetype)
+# To put text on an image use cv2.putText(img, text_string, start_coordinates, font_face, fontscale, colour(BGR Format), thickness, linetype)
 font = cv2.FONT_HERSHEY_SIMPLEX
 img = cv2.putText(img, 'OpenCV', (10,300), font, 6, (255,255,255), 10, cv2.LINE_AA)
 
