@@ -13,8 +13,8 @@ def displayColor(x,y):
     b = img[y,x,0]
     g = img[y,x,1]
     r = img[y,x,2]
-    cv2.circle(img, (x,y), 4, (0,0,255), -1)
     new_window = np.zeros((300,300,3), np.uint8)
+    # Accessing each pixel and assigning bgr value to each pixel.
     new_window[:] = [b,g,r]
     cv2.imshow('color',new_window)
 
