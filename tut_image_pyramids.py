@@ -13,7 +13,10 @@ import cv2
 import numpy as np
 from matplotlib import pyplot as plt
 
+# Use an image with a resolution as such it should be divisible by 4 repeatedly
 img = cv2.imread('data/leuvenA.jpg')
+img = cv2.resize(img, (752,560))
+
 # Using Gaussian Pyramid methods pyrdown and pyrup.
 lr1 = cv2.pyrDown(img)
 lr2 = cv2.pyrDown(lr1)
@@ -30,7 +33,7 @@ cv2.destroyAllWindows()
 layer = img.copy()
 gp  = [layer]
 
-for i in range(6):
+for i in range(4):
     layer = cv2.pyrDown(layer)
     gp.append(layer)
     cv2.imshow(str(i), layer)
@@ -46,7 +49,7 @@ layer = gp[-1]
 cv2.imshow('Upper level Gaussian Pyramid', layer)
 lp = [layer]
 
-for i in range(5,0,-1):
+for i in range(3,0,-1):
     gaussian_extended = cv2.pyrUp(gp[i])
     laplacian = cv2.subtract(gp[i-1], gaussian_extended)
     cv2.imshow(str(i), laplacian)
