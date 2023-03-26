@@ -6,7 +6,7 @@ img = cv2.imread('data/messi5.jpg', 0)
 img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
 '''
-Canny detector is an edge detection operator that uses a multi stage algorithm to detect a wide range of edges in images. It was developed by John F. Canny in 1986.
+Canny edge detector method is an edge detection operator that uses a multi stage algorithm to detect a wide range of edges in images. It was developed by John F. Canny in 1986.
 
 The Canny edge detection is composed 5 steps:
     1) Noise Reduction
@@ -16,6 +16,7 @@ The Canny edge detection is composed 5 steps:
     5) Edge Tracking by Hysteresis
 '''
 
+# Canny edge method can be used using cv2.Canny(img_source, threshold1, threshold2, edges=None, apertureSize=None, L2gradient=None), it returns the edges frame.
 edges = cv2.Canny(img, 100,200)
 
 # Plotting Code
