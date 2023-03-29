@@ -9,7 +9,7 @@ Hough Transform basics -
 
 We'll use the polar coordinate system as the cartesian coordinate system cannot represent vertical lines.
 
-Hough Transform Algorithm - 
+Hough Line Transform Algorithm - 
     1) Edge Detection using canny edge detector
     2) Mapping of edge points to the Hough space and storage in an accumulator.
     3) Interpretation of accumulator to yield lines of infinite length. The interpretation is done by thresholding and possibly other constraints.
