@@ -2,7 +2,7 @@
 Morphological transformations - 
         are some simple operations based on the images shape. They are normally performed on binary images.
 
-To perform morphological operations we need to things, 
+To perform morphological operations we need two things, 
 first the image, 
 second is called a structuring element or kernel which decides the nature of operations.
 A kernel tells you how to change the value of any given pixel by combining it with different amounts of the neighboring pixels.
